@@ -1,0 +1,31 @@
+@import "_vars.scss";
+
+@font-face {
+  font-family: "Mulish";
+  src: url(../assets/mulish-font.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: Mulish, "Helvetica Neue", Helvetica, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  background-color: var(--background-grey);
+  padding: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
